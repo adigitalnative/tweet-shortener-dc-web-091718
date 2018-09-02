@@ -1,4 +1,4 @@
-# A method to check for capitalization would be oh-so-helpful here...
+# A method to check for capitalization would be oh-so-helpful
 class String
   def capitalized?
     if chars.first == chars.first.upcase
@@ -27,12 +27,8 @@ def word_substituter(tweet)
   tweet_array = tweet.split
   
   tweet_array = tweet_array.map do |word|
-    if dictionary.keys.include?(word.downcase)
-      if dictionary[word].capitalized?
-        dictionary[word].capitalize
-      else
-        dictionary[word]
-      end
+    if dictionary.keys.include?(word)
+      dictionary[word]
     else
       word
     end
