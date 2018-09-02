@@ -46,5 +46,9 @@ def bulk_tweet_shortener(tweets)
 end
 
 def selective_tweet_shortener(tweet)
-  tweet_array = tweet.split
-  if tweet_array.length
+  if tweet.length > 140
+    word_substituter(tweet)
+  else
+    tweet
+  end
+end
