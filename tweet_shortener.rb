@@ -34,7 +34,12 @@ def bulk_tweet_shortener(tweets)
   true
 end
 
-private
-
-def capitalized?()
-  if 
+class String
+  def capitalized
+    if chars == chars.capitalized
+      true
+    else
+      false
+    end
+  end
+end
