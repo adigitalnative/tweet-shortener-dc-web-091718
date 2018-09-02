@@ -44,3 +44,7 @@ def bulk_tweet_shortener(tweets)
   end
   true
 end
+
+def selective_tweet_shortener(tweet)
+  tweet_array = tweet.split
+  if tweet_array.length
