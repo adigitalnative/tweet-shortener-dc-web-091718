@@ -1,3 +1,14 @@
+# A method to check for capitalization would be oh-so-helpful here...
+class String
+  def capitalized?
+    if chars.first == chars.first.upcase
+      true
+    else
+      false
+    end
+  end
+end
+
 def dictionary
   { "hello" => "hi",
     "to" => "2",
@@ -32,14 +43,4 @@ def bulk_tweet_shortener(tweets)
     puts word_substituter(tweet)
   end
   true
-end
-
-class String
-  def capitalized?
-    if chars.first == chars.first.upcase
-      true
-    else
-      false
-    end
-  end
 end
