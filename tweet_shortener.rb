@@ -13,5 +13,6 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  raise dictionary.inspect
+  tweet_array = tweet.split
+  raise tweet_array.inspect
 end
