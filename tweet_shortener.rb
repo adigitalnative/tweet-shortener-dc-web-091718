@@ -33,3 +33,8 @@ def bulk_tweet_shortener(tweets)
   end
   true
 end
+
+private
+
+def capitalized?(word)
+  if 
