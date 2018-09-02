@@ -11,3 +11,7 @@ def dictionary
     and: "&"
   }
 end
+
+def word_substituter(tweet)
+  raise dictionary.inspect
+end
