@@ -27,8 +27,11 @@ def word_substituter(tweet)
   tweet_array = tweet.split
   
   tweet_array = tweet_array.map do |word|
-    if dictionary.keys.include?(word.lowercase)
-      dictionary[word]
+    if dictionary.keys.include?(word.downcase)
+      if dictionary[word].capitalized?
+        dictionary[word].capitalize
+      else
+        dictionary[word]
     else
       word
     end
