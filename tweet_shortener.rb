@@ -32,6 +32,7 @@ def word_substituter(tweet)
         dictionary[word].capitalize
       else
         dictionary[word]
+      end
     else
       word
     end
