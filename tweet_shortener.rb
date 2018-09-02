@@ -36,5 +36,5 @@ end
 
 private
 
-def capitalized?
+def capitalized?()
   if 
