@@ -14,7 +14,12 @@ end
 
 def word_substituter(tweet)
   tweet_array = tweet.split
-  tweet_array.each do |word|
+  
+  tweet_array = tweet_array.map do |word|
     if dictionary.keys.include?(word)
-      
+      dictionary[:word]
+    end
+  end
+  
+  tweet_array.join(" ")
 end
