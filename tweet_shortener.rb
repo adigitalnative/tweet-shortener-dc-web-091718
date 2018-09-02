@@ -36,7 +36,7 @@ end
 
 class String
   def capitalized
-    if chars == chars.capitalized
+    if chars.first == chars.first.upcase
       true
     else
       false
